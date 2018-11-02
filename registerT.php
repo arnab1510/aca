@@ -13,10 +13,10 @@ include('server.php');
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </head>
 <body class="login_b">
-  <div class="card sign-in shadow-lg p-3 mb-5 bg-white rounded border-0" style="margin-top: 2%;">
+  <div class="card sign-in shadow-lg p-3 mb-5 bg-white rounded border-0" style="margin-top: 3%;">
 
     <form method="post" action="registerT.php">
-      <div class="form-group" style="margin-top: 12px;">
+      <div class="form-group" style="margin-top: 15px;">
 
         <div class="input-group mb-3">
           <div class="input-group-prepend">
@@ -38,14 +38,14 @@ include('server.php');
           </div>
           <input type="text" class="form-control" placeholder="Phone Number" name="phone" value="<?php echo $phone; ?>">
         </div>
- <div class="form-group col-6">
+ <div class="form-group ">
           <label for="dept">Department</label>
             <select class="form-control col-11" name="dept" style="margin-left: 10px;">
-            <option value="CIV">Civil</option>
-            <option value="CSE">Computer Science</option>
-            <option value="MECH">Mechanical</option>
-            <option value="ECE">Electroncis</option>
-            <option value="AER">Aeronautical</option>
+            <option value="CIV">Civil Engineering</option>
+            <option value="CSE">Computer Science Engineering</option>
+            <option value="MECH">Mechanical Engineering</option>
+            <option value="ECE">Electroncis Engineering</option>
+            <option value="AER">Aeronautical Engineering</option>
           </select>
         </div>
         </div>
@@ -69,7 +69,7 @@ include('server.php');
         <?php include('errors.php');?>
        </form>
 
-       <p>
+       <p style="margin-top: 10px;">
       Already a member? <a href="login.php" style="text-decoration: none;">Sign in</a></p>
 
 </body>

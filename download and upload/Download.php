@@ -1,4 +1,3 @@
-
 <?php
 @session_start();
 
@@ -27,7 +26,7 @@ if (mysqli_connect_errno()){
   </head>
   <body>
   	<form method="POST" name="FileUpload" enctype="multipart/form-data">
-  		<table>
+  		<table class="table table-hover">
   			
   				<?php 
   					for($i=0;$i<$numrow;$i++)
@@ -35,9 +34,7 @@ if (mysqli_connect_errno()){
   						$arr=mysqli_fetch_assoc($result);
   						$fileName=$arr['FileName'];
   						echo "<tr><td><a href=\"docs/$fileName\">$fileName</a></td></tr>";
-
   					}
-
   				 ?>
   			
   		</table>

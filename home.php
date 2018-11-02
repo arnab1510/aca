@@ -12,6 +12,7 @@
   }
 
 include('sidebar.php');
+
 ?>
 
 
@@ -42,10 +43,11 @@ include('sidebar.php');
                 </div>
                 </div>
                 <div class="col">
+                  <a href="notices.php">
                   <div class="card border-0 box space shadow-card" style="height: 86px;">
-                    <span class="badge badge-pill badge-primary" id="pill-notice">9</span>
+                    <span class="badge badge-pill badge-primary" id="pill-notice"><?php ob_start(); include 'notices.php'; ob_end_clean(); echo $c; ?></span>
                     <h4 class="card-title font">Notices</h4>
-                  </div>
+                  </div></a>
                 </div>
                 <div class="col">
                   <a href="grievance.php">
@@ -53,20 +55,17 @@ include('sidebar.php');
                     <h4 class="card-title font" style="font-size: 1.6em; margin-top: 17px;">Grievances</h4>
                   </div></a>
                 </div>
-                <div class="col">
+                <div class="col">   
+                 <a href="notes.php">
                   <div class="card border-0 box space shadow-card" style="height: 86px;">
                     <h4 class="card-title font" style="font-size: 1.6em; margin-top: 17px;">Notes</h4>
-                  </div>
+                  </div></a>
                 </div>
                 <div class="col">
+                <a href="tutorials.php">
                   <div class="card border-0 box space shadow-card" style="height: 86px;">
                     <h4 class="card-title font" style="font-size: 1.6em; margin-top: 17px;">Tutorials</h4>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card border-0 box space shadow-card" style="height: 86px;">
-                    <h4 class="card-title font" style="font-size: 1.6em; margin-top: 17px;">Chatroom</h4>
-                  </div>
+                  </div></a>
                 </div>
             </div>
         </div>

@@ -15,10 +15,10 @@ if (mysqli_connect_errno()){
 
 if($_SERVER['REQUEST_METHOD']=='POST')
 { 
-	$name=$_FILES['UploadFile']['name'];
-	$name123=$_FILES['UploadFile']['tmp_name'];
+	$name=$_FILES['Notes']['name'];
+	$name123=$_FILES['Notes']['tmp_name'];
 	//echo $name123;
-	$filesize= $_FILES['UploadFile']['size'];
+	$filesize= $_FILES['Notes']['size'];
 	$EverthingOk=0;
 	if ($filesize > 100000000)
 		{
@@ -26,7 +26,7 @@ if($_SERVER['REQUEST_METHOD']=='POST')
 			$EverthingOk=1;
 		}	
 		$target_dir="docs/";
-		$target_file=$target_dir.basename($_FILES["UploadFile"]["name"]);
+		$target_file=$target_dir.basename($_FILES["Notes"]["name"]);
 		//echo $filesize;
 		//echo $target_file;
 	if(file_exists($target_file))
@@ -56,7 +56,7 @@ if($_SERVER['REQUEST_METHOD']=='POST')
 
 	if($EverthingOk==0)
 	{
-		$Query="INSERT INTO UploadFile (FileName) VALUES('$name')";
+		$Query="INSERT INTO Notes (FileName) VALUES('$name')";
 		if(mysqli_query($connection,$Query))
 			{echo "<script> alert(\"saved\")</script>";
 			}
@@ -81,7 +81,7 @@ if($_SERVER['REQUEST_METHOD']=='POST')
   		<table>
   			<tr>
   				<td>
-  					<input type="file" class ="form-control" id="UploadFileID" name="UploadFile" >
+  					<input type="file" class ="form-control" id="NotesID" name="Notes" >
   				</td>
   				<td>
   					<input type="button" class="btn bg-primary" onclick="Validation()" value="UPLOAD">
@@ -96,7 +96,7 @@ if($_SERVER['REQUEST_METHOD']=='POST')
   	
   	function Validation()
 		{
-			var file=document.getElementById('UploadFileID').value;
+			var file=document.getElementById('NotesID').value;
 			var SplitFile=file.split('.');
 			if(SplitFile[1]!='pdf' && SplitFile[1]!='doc' && SplitFile[1]!='zip' && SplitFile[1]!='docx')
 				{

@@ -1,17 +1,3 @@
-<?php 
-  include('server.php');
-  if (!isset($_SESSION['username'])) {
-    $_SESSION['msg'] = "You must log in first";
-    header('location: login.php');
-  }
-
-  if (isset($_GET['logout'])) {
-    session_destroy();
-    unset($_SESSION['username']);
-    header("location: login.php");
-  }
-
- ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -38,44 +24,22 @@
             </div>
             <ul class="list-unstyled components">
                 <li class="active">
-                    <a href="#">Home</a>
+                    <a href="home.php">Home</a>
                 </li>
                 <li>
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
-                        <li>
-                            <a href="#">Home 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Home 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Home 3</a>
-                        </li>
-                    </ul>
+                    <a href="attendance.php">Attendance</a>
                 </li>
                 <li>
-                    <a href="#">About</a>
+                    <a href="notices.php">Notices</a>
                 </li>
                 <li>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
-                        <li>
-                            <a href="#">Page 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Page 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Page 3</a>
-                        </li>
-                    </ul>
+                    <a href="grievance.php">Grievances</a>
                 </li>
                 <li>
-                    <a href="#">Portfolio</a>
+                    <a href="notes.php">Notes</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="tutorials.php">Tutorials</a>
                 </li>
             </ul>
             <ul class="list-unstyled CTAs">

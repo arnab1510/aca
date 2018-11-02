@@ -11,7 +11,7 @@ if (mysqli_connect_errno()){
 
   echo "Failed to connect to MYSQL: ".mysqli_connect_error();
 }
-  $query="SELECT * FROM Notes";
+  $query="SELECT * FROM Notices";
   $result=mysqli_query($connection,$query);
   $numrow=mysqli_num_rows($result);
   include('sidebar.php');
@@ -23,7 +23,7 @@ if (mysqli_connect_errno()){
   <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Notes</title>
+  <title>Notices</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   <link href="assets/css/main.css" rel="stylesheet" media="all">
   <link rel="stylesheet" href="assets/css/sidebar.css">
@@ -61,7 +61,7 @@ if (mysqli_connect_errno()){
     
     function Validation()
     {
-      var file=document.getElementById('NotesID').value;
+      var file=document.getElementById('NoticesID').value;
       var SplitFile=file.split('.');
       if(SplitFile[1]!='pdf' && SplitFile[1]!='doc' && SplitFile[1]!='zip' && SplitFile[1]!='docx')
         {

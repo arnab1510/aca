@@ -103,3 +103,8 @@
 	-o-background-size:cover;
 	background-size:cover;
 }
+
+/* Notices */
+.notices {
+	margin-top: 150px;
+}
