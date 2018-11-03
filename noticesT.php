@@ -1,6 +1,5 @@
 <?php
 @session_start();
-$user = $_SESSION['username'];
 define('DB_SERVER','localhost');
 define('DB_USER','harsh');
 define('DB_PASS','harsh123');
@@ -14,9 +13,6 @@ if (mysqli_connect_errno()){
 
 if($_SERVER['REQUEST_METHOD']=='POST')
 { 
-  $s=("SELECT sem FROM users WHERE username = '$user'");
-  $se=mysqli_query($connection,$s);
-  $seme = mysqli_fetch_array($se);
   $name=$_FILES['Notices']['name'];
   $name123=$_FILES['Notices']['tmp_name'];
   //echo $name123;
@@ -58,7 +54,7 @@ if($_SERVER['REQUEST_METHOD']=='POST')
 
   if($EverthingOk==0)
   {
-    $Query="INSERT INTO Notices ('FileName','sem') VALUES('$name','$seme')";
+    $Query="INSERT INTO Notices (FileName) VALUES('$name')";
     if(mysqli_query($connection,$Query))
       {echo "<script> alert(\"File Saved\")</script>";
       }
