@@ -6,7 +6,7 @@ include('server.php');
 <head>
   <title>Registration</title>
   <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 </head>
 <body class="login_reg">
 	<a href="register.php" style="text-decoration: none;">

@@ -18,7 +18,7 @@
 
 /* Login */
 .login_b {
-	background-image: url('../../assets/images/aca.jpg');
+	background-image: url('../../assets/images/aca2.jpg');
 	background-repeat:no-repeat;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -108,3 +108,4 @@
 .notices {
 	margin-top: 150px;
 }
+

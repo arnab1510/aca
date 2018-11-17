@@ -6,14 +6,15 @@ include('server.php');
 <head>
   <title>Register</title>
   <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/all.css">
+  <script src="assets/js/all.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
 </head>
 <body class="login_b">
-  <div class="card sign-in shadow-lg p-3 mb-5 bg-white rounded border-0" style="margin-top: 3%;">
+  <div class="card sign-in shadow-lg p-3 mb-5 bg-white rounded border-0" style="margin-top: 3%; margin-left: 8%;">
 
     <form method="post" action="registerT.php">
       <div class="form-group" style="margin-top: 15px;">
@@ -71,6 +72,8 @@ include('server.php');
 
        <p style="margin-top: 10px;">
       Already a member? <a href="login.php" style="text-decoration: none;">Sign in</a></p>
+    </div>
+    <div class="container-fluid" style="position: fixed; bottom: 15px; margin-left: 30px;text-align: center;">Made by: Harsh Gaur (1SJ15CS038) & Anubhab Dutta Choudhury (1SJ15CS013)</div>
 
 </body>
 </html>

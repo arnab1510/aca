@@ -6,17 +6,18 @@ include('server.php');
 <head>
   <title>Register</title>
   <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/all.css">
+  <script src="assets/js/all.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
 </head>
 <body class="login_b">
-  <div class="card sign-in shadow-lg p-3 mb-5 bg-white rounded border-0" style="margin-top: 2%;">
+  <div class="card sign-in shadow-lg p-3 mb-5 bg-white rounded border-0" style="margin-top: 1%; margin-left: 8%;">
 
     <form method="post" action="register.php">
-      <div class="form-group" style="margin-top: 12px;">
+      <div class="form-group" style="margin-top: 8px;">
 
         <div class="input-group mb-3">
           <div class="input-group-prepend">
@@ -47,7 +48,7 @@ include('server.php');
         </div>
 
         <div class="form-row">
-        <div class="form-group col-3">
+        <div class="form-group col-3" name="sem" value="<?php echo $sem; ?>">
           <label for="sem">Semester</label>
             <select class="form-control col-9" name="sem" style="margin-left: 10px;">
             <option value="1">1</option>
@@ -61,7 +62,7 @@ include('server.php');
           </select>
         </div>
 
-        <div class="form-group col-3">
+        <div class="form-group col-3" name="sec" value="<?php echo $sec; ?>">
           <label for="sec">Section</label>
             <select class="form-control col-9" name="sec" style="margin-left: 12px;">
             <option value="A">A</option>
@@ -70,7 +71,7 @@ include('server.php');
           </select>
         </div>
 
-        <div class="form-group col-6">
+        <div class="form-group col-6" name="dept" value="<?php echo $dept; ?>">
           <label for="dept">Department</label>
             <select class="form-control col-11" name="dept" style="margin-left: 10px;">
             <option value="CIV">Civil</option>
@@ -99,12 +100,13 @@ include('server.php');
         <?php include('errors.php');?>
         <?php include('errorl.php');?>
 
-        <button type="submit" class="login btn btn-outline-primary" name="reg_user" style=" margin-top: 7px;  border-radius: 20px;">Submit</button>
-
-       </form>
-
+        <button type="submit" class="login btn btn-outline-primary" name="reg_user" style=" margin-top: 5px;  border-radius: 20px;">Submit</button>
        <p>
       Already a member? <a href="login.php" style="text-decoration: none;">Sign in</a></p>
+    </div>
+  </form>
+</div>
+<div class="container-fluid" style="position: fixed; bottom: 15px; margin-left: 30px;text-align: center;">Made by: Harsh Gaur (1SJ15CS038) & Anubhab Dutta Choudhury (1SJ15CS013)</div>
 
 </body>
 </html>

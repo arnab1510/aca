@@ -37,13 +37,13 @@ $msg = '';
     $mail->isSMTP();                                      // Set mailer to use SMTP
     $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = 'arnab15102012@gmail.com';                 // SMTP username
-    $mail->Password = 'Inception1984';                           // SMTP password
+    $mail->Username = 'harshgaur997@gmail.com';                 // SMTP username
+    $mail->Password = 'I';                           // SMTP password
     $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 587;
         //Recipients
-    $mail->setFrom('arnab15102012@gmail.com', 'Arnab');
-    $mail->addAddress('arnab15102012@gmail.com', 'AT');     // Add a recipient
+    $mail->setFrom('harshgaur997@gmail.com', 'College');
+    $mail->addAddress('harshgaur997@gmail.com', 'Principal');     // Add a recipient
 
         $mail->Subject = "New Student Grievance";
         $mail->isHTML(true);
@@ -67,7 +67,7 @@ $msg = '';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Grievances</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link href="assets/css/main.css" rel="stylesheet" media="all">
 	<link rel="stylesheet" href="assets/css/sidebar.css">
 

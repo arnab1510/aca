@@ -6,7 +6,7 @@ include('server.php');
 <head>
   <title>Login</title>
   <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 </head>
 <body class="login_b">
   <div class="card sign-in shadow-lg p-3 mb-5 bg-white rounded border-0">
@@ -40,5 +40,9 @@ include('server.php');
         <?php include('errors.php'); ?>
        </form>
           <p style="margin-top: 18px;">Not A Member? <a href="registration.php">Sign Up!</a></p>
+        </div>
+      </form>
+    </div>
+    <div class="container-fluid" style="position: fixed; bottom: 15px; margin-left: 30px;text-align: center;">Made by: Harsh Gaur (1SJ15CS038) & Anubhab Dutta Choudhury (1SJ15CS013)</div>
 </body>
 </html>

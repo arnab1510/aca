@@ -7,7 +7,7 @@
 	$phone	  = "";
 	$sem 	  = "";
 	$sec 	  = "";
-	$branch   = "";
+	$dept   = "";
 	$pos 	  = "";
 
 	$errors = array();

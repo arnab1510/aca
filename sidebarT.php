@@ -7,9 +7,6 @@
     <title>Sidebar</title>
     <!-- Bootstrap CSS CDN -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/all.css">
-  <script src="assets/js/all.js"></script>
-
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="assets/css/sidebar.css">
     <!-- Scrollbar Custom CSS -->
@@ -17,7 +14,6 @@
     <!-- Font Awesome JS -->
     <script defer src="assets/js/solid.js"></script>
     <script defer src="assets/js/fontawesome.js"></script>
-
 </head>
 <body>
     <div class="wrapper">
@@ -28,22 +24,22 @@
             </div>
             <ul class="list-unstyled components">
                 <li class="active">
-                    <a href="home.php"><span><i class="fas fa-user" style="margin-right: 15px;"></i></span>Home</a>
+                    <a href="homeT.php"><span><i class="fas fa-user" style="margin-right: 15px;"></i></span>Home</a>
                 </li>
                 <!--<li>
-                    <a href="attendance.php">Attendance</a>
+                    <a href="attendanceT.php">Attendance</a>
                 </li>-->
                 <li>
-                    <a href="notices.php"><span><i class="fas fa-bullhorn" style="margin-right: 15px;"></i></span>Notices</a>
+                    <a href="noticesT.php"><span><i class="fas fa-bullhorn" style="margin-right: 15px;"></i></span>Notices</a>
                 </li>
                 <li>
-                    <a href="grievance.php"><span><i class="fas fa-exclamation-triangle" style="margin-right: 15px;"></i></span>Grievances</a>
+                    <a href="grievanceT.php"><span><i class="fas fa-exclamation-triangle" style="margin-right: 15px;"></i></span>Grievances</a>
                 </li>
                 <li>
-                    <a href="notes.php"><span><i class="fas fa-book-open" style="margin-right: 15px;"></i></span>Notes</a>
+                    <a href="notesT.php"><span><i class="fas fa-book-open" style="margin-right: 15px;"></i></span>Notes</a>
                 </li>
                 <li>
-                    <a href="tutorials.php"><span><i class="fas fa-copy" style="margin-right: 15px;"></i></span>Tutorials</a>
+                    <a href="tutorialsT.php"><span><i class="fas fa-copy" style="margin-right: 15px;"></i></span>Tutorials</a>
                 </li>
             </ul>
             <ul class="list-unstyled CTAs">
@@ -65,7 +61,7 @@
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
     <!-- Popper.JS -->
-    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/popper.min.js"></script>
     <!-- Bootstrap JS -->
     <script src="assets/js/bootstrap.min.js"></script>
     <!-- jQuery Custom Scroller CDN -->

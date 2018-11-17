@@ -11,10 +11,8 @@
     header("location: login.php");
   }
 
-include('sidebar.php');
-
+include('sidebarT.php');
 ?>
-
 
 <!DOCTYPE html>
 <html>
@@ -24,7 +22,7 @@ include('sidebar.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Home For Students</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link href="assets/css/main.css" rel="stylesheet" media="all">
   <link rel="stylesheet" href="assets/css/sidebar.css">
 
